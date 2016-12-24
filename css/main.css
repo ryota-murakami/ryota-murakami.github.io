@@ -2500,6 +2500,10 @@
 			width: 6.25em;
 		}
 
+		#header > h1 > strong > a {
+			opacity: 0.8;
+		}
+
 /* Footer */
 
 	#footer {
@@ -3106,4 +3110,9 @@
 				padding-left: 0;
 			}
 
+	}
+
+	.main-text {
+		font-size: 1.5em !important;
+		color: #787878;
 	}
