@@ -2560,8 +2560,8 @@
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 2em 0 0 0;
 		}
 
 			#main > section:first-child {
@@ -3119,4 +3119,8 @@
 
 	#main h1 {
 		color: #333;
+	}
+
+	.works-row .work-item:last-child {
+		margin-bottom: 0;
 	}
