@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ryota-murakami</title>
-    <link>http://ryota-murakami.github.io/</link>
+    <link>http://ryota-murakami.github.io/index.xml</link>
     <description>Recent content on ryota-murakami</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
