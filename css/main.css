@@ -3115,6 +3115,7 @@
 	.main-text {
 		font-size: 1.3em !important;
 		color: #787878;
+		white-space: nowrap;
 	}
 
 	#main h1 {
