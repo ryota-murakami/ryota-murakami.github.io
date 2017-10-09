@@ -2032,7 +2032,6 @@ word-break
 				text-align: center;
 				text-decoration: none;
 				top: 50%;
-				white-space: nowrap;
 			}
 
 			.image.thumb:hover:after {
