@@ -289,13 +289,6 @@
 		padding-left: 10px;
 	}
 
-	.repo-closed_section a {
-		border: none;
-		color: #333;
-		font-size: 26px;
-		line-height: 26px;
-	}
-
 	.repo-closed_section_flex_container1 {
 		display: flex;
 		justify-content: flex-start;
@@ -306,6 +299,18 @@
 		flex: 0 1 auto;
 		color: #333;
 		font-size: 1.1em;
+	}
+
+	.repo-closed_section_title > a {
+		border-bottom: 1px dotted rgb(120, 120, 120);
+		color: #333;
+		font-size: 26px;
+		line-height: 26px;
+		transition: border-color 0.2s ease-in-out;
+	}
+
+	.repo-closed_section_title > a:hover {
+		border-bottom-color: transparent;
 	}
 
 	.repo-closed_overview_desc {
@@ -329,7 +334,7 @@
 		<div class="repo-closed_section">
 			<div class="repo-closed_section_flex_container1">
 				<div class="repo-closed_section_title"><a href="https://github.com/ryota-murakami/trueblue" target="_blank">True Blue</a></div>
-				<div class="repo-closed_overview_desc">Archive tweets on every other day📆</div>
+				<div class="repo-closed_overview_desc">Archive tweets on every other day 📆</div>
 			</div>
 			<div class="repo-closed_overview_img"><img src="https://github.com/ryota-murakami/trueblue/raw/master/demo.gif" alt="example" style="max-width:100%;"></div>
 		</div>
