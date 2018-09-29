@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Ryota.Murakami">
 		<meta name="description" content="Profile">
-		<meta http-equiv="content-language" content="ja" />
+		<meta http-equiv="content-language" content="en" />
 		<meta name="generator" content="Hugo 0.46" />
 		
 		<link rel="apple-touch-icon" href="./images/icon.png"/>
@@ -108,16 +108,25 @@
 		margin-bottom: 15px
 	}
 
-	.oss-backer .oss-backer_site {
+	.oss-backer_site {
 		color: #333;
 		margin-bottom: 0;
 	}
 
+	.oss-backer_site > li {
+		margin-bottom: 10px;
+	}
+
+	.oss-backer_site > li:last-child {
+		margin-bottom: 0;
+	}
+
+
 	.oss-backer .oss-backer_site a {
 		color: #333;
 		border: none;
-		font-size: 20px;
-		line-height: 18px;
+		font-size: 24px;
+		line-height: 24px;
 	}
 </style>
 <div class="about-container">
@@ -186,30 +195,32 @@
 	.sns-section h2 {
 		margin-bottom: 12px;
 	}
+
+	.sns-section_container {
+		display: flex;
+	}
+
+	.sns-section_container a {
+		border: none;
+		color: #333;
+		font-size: 24px;
+		line-height: 24px;
+		flex: 0.06 1 auto;
+	}
 </style>
 <section class="sns-section">
 	<h1>SNS</h1>
-	<div class="row">
+	<div class="sns-section_container">
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://twitter.com/malloc007">Twitter</a></h2>
-		</article>
+		<a target="_blank" href="https://twitter.com/malloc007">Twitter</a>
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://www.instagram.com/ryota_murakam1/">Instagram</a></h2>
-		</article>
+		<a target="_blank" href="https://www.instagram.com/ryota_murakam1/">Instagram</a>
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://www.facebook.com/ryota.murakami.100">Facebook</a></h2>
-		</article>
+		<a target="_blank" href="https://www.facebook.com/ryota.murakami.100">Facebook</a>
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://github.com/ryota-murakami">GitHub</a></h2>
-		</article>
+		<a target="_blank" href="https://github.com/ryota-murakami">GitHub</a>
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://www.linkedin.com/in/ryota-murakami-ba9206164/">LinkedIn</a></h2>
-		</article>
+		<a target="_blank" href="https://www.linkedin.com/in/ryota-murakami-ba9206164/">LinkedIn</a>
 		
 	</div>
 </section>
@@ -220,55 +231,104 @@
 		margin-bottom: 20px;
 	}
 
-	.library-section article {
-		margin-bottom: 15px;
-	}
-
 	.library-section .library-section_desc {
 		line-height: 1.3em;
+	}
+
+	.library-section_item {
+		display: flex;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	.library-section_item:last-child {
+		padding-bottom: 0;
+	}
+
+	.library-section_item a {
+		border: none;
+		color: #333;
+		font-size: 24px;
+		line-height: 24px;
+		padding-right: 30px;
+		flex: 1 0 auto;
+	}
+
+	.library-section_desc {
+		flex: 1 0 auto;
+		font-size: 1.1em;
+		color: #787878;
+		line-height: 24px;
 	}
 </style>
 <section class="library-section">
 	<h1>Library</h1>
-	<div class="row works-row">
+	<div class="row">
 		
-		<article class="10u$ work-item">
-			<h2 style="margin-bottom: 0.4em;"><a target="_blank" href="https://github.com/ryota-murakami/redux-vanilla">Redux Vanilla</a></h2>
-			<p class="library-section_desc" style="font-size: 1.1em;color: #787878;">🍨 Hobby liblary learn to react/redux binding. That is passing raw redux store to React component.</p>
-		</article>
+		<div class="library-section_item">
+			<a target="_blank" href="https://github.com/ryota-murakami/redux-vanilla">Redux Vanilla</a>
+			<div class="library-section_desc">Hobby liblary for learn to how react-redux implements.</div>
+		</div>
 		
-		<article class="10u$ work-item">
-			<h2 style="margin-bottom: 0.4em;"><a target="_blank" href="https://github.com/ryota-murakami/twitter-bearer-token-getter">Twitter Bearer Token Getter</a></h2>
-			<p class="library-section_desc" style="font-size: 1.1em;color: #787878;">CLI tool of twitter API Bearer Token.</p>
-		</article>
+		<div class="library-section_item">
+			<a target="_blank" href="https://github.com/ryota-murakami/twitter-bearer-token-getter">Twitter Bearer Token Getter</a>
+			<div class="library-section_desc">CLI tool of twitter API Bearer Token.</div>
+		</div>
 		
 	</div>
 </section>
 
 			<!-- article -->
 <style>
-	.article-section h1 { margin-bottom: 15px; }
-	.article-section h2 { margin-bottom: 15px; }
+	.article-section h1 {
+		margin-bottom: 15px;
+	}
+
+
+	.article-section .row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.article-section_item {
+		flex: 0 1 auto;
+		padding-bottom: 10px;
+	}
+
+	.article-section_item:last-child {
+		padding-bottom: 0;
+	}
+
+	.article-section a {
+		border: none;
+		color: #333;
+		font-size: 24px;
+		line-height: 24px;
+	}
 </style>
 <section class="article-section">
 	<h1>Article</h1>
 	<div class="row">
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://dev.to/ryotamurakami">dev.to</a></h2>
-		</article>
+		<div class="article-section_item">
+			<a target="_blank" href="https://dev.to/ryotamurakami">dev.to</a>
+		</div>
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://qiita.com/ryota-murakami">qiita(日本語)</a></h2>
-		</article>
+		<div class="article-section_item">
+			<a target="_blank" href="https://qiita.com/ryota-murakami">qiita(日本語)</a>
+		</div>
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="http://malloc.hatenablog.jp/">Hatena Blog(日本語)</a></h2>
-		</article>
+		<div class="article-section_item">
+			<a target="_blank" href="http://malloc.hatenablog.jp/">Hatena Blog(日本語)</a>
+		</div>
 		
-		<article class="10u$">
-			<h2><a target="_blank" href="https://speakerdeck.com/ryotamurakami/">Speaker Deck</a></h2>
-		</article>
+		<div class="article-section_item">
+			<a target="_blank" href="https://speakerdeck.com/ryotamurakami/">Speaker Deck</a>
+		</div>
+		
+		<div class="article-section_item">
+			<a target="_blank" href="https://malloc.tokyo/">ここがほむほーむヾ(*・ω・)ノ</a>
+		</div>
 		
 	</div>
 </section>
@@ -316,7 +376,7 @@
 
 	.repo-closed_overview_desc {
 		flex: 0 1 auto;
-		padding-left: 25px;
+		padding-left: 20px;
 		font-size: 1.1em;
 		line-height: 1.4em;
 		color: #333;
@@ -370,7 +430,7 @@
 				
 				<li>
 					<h3 class="icon fa-envelope-o"><span class="label"></span></h3>
-					<a>dojce1048@gmail.com</a>
+					<a style="color: #333;">dojce1048@gmail.com</a>
 				</li>
 				
 			</ul>
