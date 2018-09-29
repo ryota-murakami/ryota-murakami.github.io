@@ -2441,20 +2441,20 @@ word-break
 
 /* Work Item */
 
-	.library-section_item {
+	.work-item {
 		margin: 0 0 2em 0;
 	}
 
-		.library-section_item .image {
+		.work-item .image {
 			margin: 0 0 1.5em 0;
 		}
 
-		.library-section_item h3 {
+		.work-item h3 {
 			font-size: 1em;
 			margin: 0 0 0.5em 0;
 		}
 
-		.library-section_item p {
+		.work-item p {
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
@@ -3120,6 +3120,6 @@ word-break
 		color: #333;
 	}
 
-	.works-row .library-section_item:last-child {
+	.works-row .work-item:last-child {
 		margin-bottom: 0;
 	}
