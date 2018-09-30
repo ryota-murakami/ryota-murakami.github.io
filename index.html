@@ -104,11 +104,6 @@
 		margin-bottom: 20px;
 	}
 
-	.oss-backer .main-text {
-		line-height: 1.25em;
-		margin-bottom: 15px
-	}
-
 	.oss-backer_site {
 		color: #333;
 		margin-bottom: 0;
@@ -178,7 +173,6 @@
 
 	<div class="oss-backer">
 		<h1>OSS Backer</h1>
-		<div class="main-text">I'm living on sustained awesome OSS tools😀</div>
 		<ul class="oss-backer_site">
 			<li><a href="https://opencollective.com/malloc007" target="_blank">Open Collective</a></li>
 			<li><a href="https://www.patreon.com/user/creators?u=5266380" target="_blank">Patreon</a></li>
@@ -236,10 +230,15 @@
 		line-height: 1.3em;
 	}
 
-	.library-section_item {
+	.library-section .row {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
 		padding-bottom: 20px;
+	}
+
+	.library-section_item {
+		flex: 1 0 auto;
+		padding-bottom: 10px;
 	}
 
 	.library-section_item:last-child {
@@ -251,16 +250,9 @@
 		color: #333;
 		font-size: 24px;
 		line-height: 24px;
-		padding-right: 30px;
 		flex: 1 0 auto;
 	}
 
-	.library-section_desc {
-		flex: 1 0 auto;
-		font-size: 1.1em;
-		color: #787878;
-		line-height: 24px;
-	}
 </style>
 <section class="library-section">
 	<h1>Library</h1>
@@ -268,12 +260,10 @@
 		
 		<div class="library-section_item">
 			<a target="_blank" href="https://github.com/ryota-murakami/redux-vanilla">Redux Vanilla</a>
-			<div class="library-section_desc">Hobby liblary for learn to how react-redux implements.</div>
 		</div>
 		
 		<div class="library-section_item">
 			<a target="_blank" href="https://github.com/ryota-murakami/twitter-bearer-token-getter">Twitter Bearer Token Getter</a>
-			<div class="library-section_desc">CLI tool of twitter API Bearer Token.</div>
 		</div>
 		
 	</div>
