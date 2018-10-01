@@ -184,38 +184,37 @@
 			<!-- activity -->
 <style>
 	.sns-section h1 {
-		margin-bottom: 15px;
-	}
-
-	.sns-section h2 {
-		margin-bottom: 12px;
+		margin-bottom: 5px;
 	}
 
 	.sns-section_container {
 		display: flex;
+		flex-wrap: wrap;
 	}
 
-	.sns-section_container a {
+	.sns-section_item {
 		border: none;
 		color: #333;
 		font-size: 24px;
 		line-height: 24px;
-		flex: 0.06 1 auto;
+		flex: 0 1 auto;
+		margin-right: 10px;
+		margin-top: 10px;
 	}
 </style>
 <section class="sns-section">
 	<h1>SNS</h1>
 	<div class="sns-section_container">
 		
-		<a target="_blank" href="https://twitter.com/malloc007">Twitter</a>
+		<a class="sns-section_item" target="_blank" href="https://twitter.com/malloc007">Twitter</a>
 		
-		<a target="_blank" href="https://www.instagram.com/ryota_murakam1/">Instagram</a>
+		<a class="sns-section_item" target="_blank" href="https://www.instagram.com/ryota_murakam1/">Instagram</a>
 		
-		<a target="_blank" href="https://www.facebook.com/ryota.murakami.100">Facebook</a>
+		<a class="sns-section_item" target="_blank" href="https://www.facebook.com/ryota.murakami.100">Facebook</a>
 		
-		<a target="_blank" href="https://github.com/ryota-murakami">GitHub</a>
+		<a class="sns-section_item" target="_blank" href="https://github.com/ryota-murakami">GitHub</a>
 		
-		<a target="_blank" href="https://www.linkedin.com/in/ryota-murakami-ba9206164/">LinkedIn</a>
+		<a class="sns-section_item" target="_blank" href="https://www.linkedin.com/in/ryota-murakami-ba9206164/">LinkedIn</a>
 		
 	</div>
 </section>
@@ -324,30 +323,31 @@
 </section>
 
 			<style>
-	.repo-closed {
+	.closed-repo {
 		margin-bottom: 35px;
 		border-top: solid 2px #efefef;
 		margin: 2em 0 0 0;
 		padding: 2em 0 0 0;
 	}
 
-	.repo-closed > h1 {
+	.closed-repo > h1 {
 		margin-bottom: 20px;
 	}
 
-	.repo-closed_section_flex_container1 {
+	.closed-repo_section_flex_container {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 	}
 
-	.repo-closed_section_title {
+	.closed-repo_section_title {
 		flex: 0 1 auto;
 		color: #333;
 		font-size: 1.1em;
+		min-width: 103px;
 	}
 
-	.repo-closed_section_title > a {
+	.closed-repo_section_title > a {
 		border-bottom: 1px dotted rgb(120, 120, 120);
 		color: #333;
 		font-size: 26px;
@@ -355,11 +355,11 @@
 		transition: border-color 0.2s ease-in-out;
 	}
 
-	.repo-closed_section_title > a:hover {
+	.closed-repo_section_title > a:hover {
 		border-bottom-color: transparent;
 	}
 
-	.repo-closed_overview_desc {
+	.closed-repo_overview_desc {
 		flex: 0 1 auto;
 		padding-left: 20px;
 		font-size: 1.1em;
@@ -367,22 +367,20 @@
 		color: #333;
 	}
 
-	.repo-closed_overview_img {
+	.closed-repo_overview_img {
 		padding-top: 30px;
 	}
 
 </style>
 <div>
-
-	<div class="repo-closed">
+	<div class="closed-repo">
 		<h1>Closed App</h1>
-
 		<div>
-			<div class="repo-closed_section_flex_container1">
-				<div class="repo-closed_section_title"><a href="https://github.com/ryota-murakami/trueblue" target="_blank">True Blue</a></div>
-				<div class="repo-closed_overview_desc">Archive tweets on every other day 📆</div>
+			<div class="closed-repo_section_flex_container">
+				<div class="closed-repo_section_title"><a href="https://github.com/ryota-murakami/trueblue" target="_blank">True Blue</a></div>
+				<div class="closed-repo_overview_desc">Archive tweets on every other day 📆</div>
 			</div>
-			<div class="repo-closed_overview_img"><img src="https://github.com/ryota-murakami/trueblue/raw/master/demo.gif" alt="example" style="max-width:100%;"></div>
+			<div class="closed-repo_overview_img"><img src="https://github.com/ryota-murakami/trueblue/raw/master/demo.gif" alt="example" style="max-width:100%;"></div>
 		</div>
 	</div>
 
